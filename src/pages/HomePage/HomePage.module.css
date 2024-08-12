@@ -1,0 +1,330 @@
+@import url("../../index.css");
+
+.mainContainer {
+  height: 100%;
+  min-height: 810px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 0px 48px 0px;
+}
+
+.heroContainer {
+  height: auto;
+  min-height: 415px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 0px 48px 0px;
+  gap: 48px;
+}
+
+.heroDetailsContainer {
+  height: auto;
+  min-height: 172.5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.heroHeadingTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.heroDetailsTextSpan {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.projectsContainer {
+  height: auto;
+  min-height: 541px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 2px solid var(--color-border);
+  padding: 48px 0px;
+  gap: 24px;
+}
+
+.projectDetailsContainer {
+  height: auto;
+  min-height: 377px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.projectHeadingContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projectHeadingTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.projectDetailCardsContainer {
+  height: auto;
+  min-height: 375px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.projectCard {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.projectCardImageContainer {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-card-background);
+  border-radius: 6px;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectCardImageContainer:hover,
+.projectCardImageContainer:hover > .projectCardImage {
+  border-radius: 6px;
+  padding: 0px;
+}
+
+.projectCardDetailsContainer {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.projectCardHeadingTextSpan {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.projectCardDetailsTextSpan {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.stacksContainer {
+  height: auto;
+  min-height: 432px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 2px solid var(--color-border);
+  padding: 48px 0px;
+  gap: 24px;
+}
+
+.stacksDetailsContainer {
+  width: 100%;
+  height: auto;
+  min-height: 268px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.stackDetailsHeadingContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stackDetailsHeadingTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.stackDetailsCardsContainer {
+  height: auto;
+  min-height: 208px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.stacksCard {
+  height: 100%;
+  max-height: 92px;
+  width: auto;
+  min-width: 30%;
+  border-radius: 12px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.stackCardIconContainer {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #dbdbdb;
+  padding: 10px;
+}
+
+.stackCardIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.stackCardDetailsContainer {
+  height: 100%;
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.stackCardHeadingTextSpan {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.stackCardDetailTextSpan {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .projectDetailCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .stackDetailsCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+  }
+
+  .projectCard:nth-child(n + 3),
+  .stacksCard:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 767px) {
+  .heroContainer {
+    min-height: 292px;
+    gap: 12px;
+    padding: 0px 0px 24px 0px;
+  }
+
+  .heroHeadingTextSpan {
+    font-size: 36px;
+  }
+
+  .heroButtonContainer {
+    width: 100%;
+  }
+
+  .projectHeadingTextSpan,
+  .stackDetailsHeadingTextSpan {
+    font-size: 24px;
+  }
+
+  .projectDetailCardsContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projectCard {
+    min-height: 414px;
+    max-width: none;
+  }
+
+  .projectCard:nth-child(n + 3) {
+    display: none;
+  }
+
+  .stackDetailsCardsContainer {
+    flex-direction: column;
+  }
+
+  .stacksCard {
+    width: 100%;
+  }
+
+  .stacksCard:nth-child(n + 4) {
+    display: none;
+  }
+}

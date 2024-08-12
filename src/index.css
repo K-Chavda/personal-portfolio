@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+  --font-mono: "Source Code Pro", monospace;
+  --font-inter: "Inter", sans-serif;
+
+  --font-body-weight: 400;
+  --font-heading-weight: 700;
+  --font-line-height: 1.5;
+
+  --color-accent: #ffa500;
+  --color-primary: #000000;
+  --color-primary-text: #ffffff;
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-border: #e6e6e6;
+  --color-link-hover: #fafafa;
+  --color-button-background: #000000;
+  --color-input-background: #ffffff;
+  --color-input-shadow-12: rgba(0, 0, 0, 0.12);
+  --color-input-shadow-24: rgba(0, 0, 0, 0.24);
+  --color-card-background: #f2f2f2;
+  --color-accent-button-hover: #ffae00;
+  --color-project-card-background: #fafafa;
+
+  --color-accent-dark: #ffa500;
+  --color-primary-dark: #ffffff;
+  --color-primart-text-dark: #000000;
+  --color-background-dark: #000000;
+  --color-text-dark: #ffffff;
+  --color-border-dark: rgb(48, 48, 48);
+  --color-link-hover-dark: #171717;
+  --color-button-background-dark: #ffa500;
+  --color-input-background-dark: #151515;
+  --color-input-shadow-12-dark: rgba(255, 255, 255, 0.12);
+  --color-input-shadow-24-dark: rgba(255, 255, 255, 0.24);
+  --color-card-background-dark: #1d1d1d;
+  --color-project-card-background-dark: #161616;
+
+  --font-synthesis: none;
+  --text-rendering: optimizeLegibility;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+
+  /* Animation Variables */
+  --animation-duration: 0.5s;
+  --animation-timing: ease-in-out;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: var(--font-line-height);
+  font-weight: var(--font-body-weight);
+  font-synthesis: var(--font-synthesis);
+  text-rendering: var(--text-rendering);
+  -webkit-font-smoothing: var(--webkit-font-smoothing);
+  -moz-osx-font-smoothing: var(--moz-osx-font-smoothing);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Initial Animation */
+  opacity: 0;
+  animation: fadeIn var(--animation-duration) var(--animation-timing) forwards;
+
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-merriweather);
+  font-weight: var(--font-heading-weight);
+  color: var(--color-text);
+
+  /* Initial Animation */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn var(--animation-duration) var(--animation-timing) forwards;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-sans);
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark-theme {
+  --color-accent: var(--color-accent-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-primary-text: var(--color-primart-text-dark);
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
+  --color-border: var(--color-border-dark);
+  --color-link-hover: var(--color-link-hover-dark);
+  --color-button-background: var(--color-button-background-dark);
+  --color-input-shadow-12: var(--color-input-shadow-12-dark);
+  --color-input-shadow-24: var(--color-input-shadow-24-dark);
+  --color-input-background: var(--color-input-background-dark);
+  --color-card-background: var(--color-card-background-dark);
+  --color-project-card-background: var(--color-project-card-background-dark);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,39 @@
+@import url("../../index.css");
+
+.workStatusContainer {
+  background-color: #e9fcf4;
+  width: auto;
+  height: 20%;
+  max-height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 6px;
+}
+
+.workStatusIconSpan {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #19b373;
+}
+
+.workStatusTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 14px;
+  font-weight: 600;
+  color: #19b373;
+}
+
+.unavailableStatusBg {
+  background-color: #fce8e9;
+}
+
+.unavailableStatusText {
+  color: #ba1220;
+}
+
+.unavailableStatusIcon {
+  background-color: #ba1220;
+}

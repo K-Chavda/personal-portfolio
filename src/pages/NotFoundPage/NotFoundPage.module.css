@@ -1,0 +1,253 @@
+@import url("../../index.css");
+
+.mainContainer {
+  height: 100vh;
+  width: calc(100vw - 96px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: 0px 48px;
+}
+
+.pageNotFoundContainer {
+  width: 100%;
+  height: 100%;
+  max-height: 332px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 0px 144px 0px;
+  animation: slide-up 3s ease-in-out;
+}
+
+.pageNotFoundContentContainer {
+  width: 100%;
+  height: 100%;
+  max-height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0px 0px 24px 0px;
+}
+
+.pageNotFoundTextHeading {
+  color: var(--color-text);
+  font-family: var(--font-merriweather);
+  font-size: 52px;
+  font-weight: 700;
+  height: 100%;
+  max-height: 52px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pageNotFoundText {
+  color: var(--color-text);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  max-height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pageNotFoundButtonContainer {
+  height: 50%;
+  max-height: 45px;
+  min-height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide-up {
+  0% {
+    padding: 0px 0px 0px 0px;
+  }
+  100% {
+    padding: 0px 0px 144px 0px;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .mainContainer {
+    height: 100vh;
+    width: calc(100vw - 96px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 0px 48px;
+  }
+
+  .pageNotFoundContainer {
+    width: 100%;
+    height: 100%;
+    max-height: 332px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 0px 131px 0px;
+    animation: slide-up 3s ease-in-out;
+  }
+
+  .pageNotFoundContentContainer {
+    width: 100%;
+    height: 100%;
+    max-height: 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 0px 24px 0px;
+  }
+
+  .pageNotFoundTextHeading {
+    color: var(--color-text);
+    font-family: var(--font-merriweather);
+    font-size: 44px;
+    font-weight: 700;
+    height: 100%;
+    max-height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pageNotFoundText {
+    color: var(--color-text);
+    font-family: var(--font-lato);
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    max-height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pageNotFoundButtonContainer {
+    height: 50%;
+    max-height: 45px;
+    min-height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes slide-up {
+    0% {
+      padding: 0px 0px 0px 0px;
+    }
+    100% {
+      padding: 0px 0px 131px 0px;
+    }
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 767px) {
+  .mainContainer {
+    height: 100vh;
+    width: calc(100vw - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 0px 24px;
+  }
+
+  .pageNotFoundContainer {
+    width: 100%;
+    height: 100%;
+    max-height: 332px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 0px 117px 0px;
+    animation: slide-up 3s ease-in-out;
+  }
+
+  .pageNotFoundContentContainer {
+    width: 100%;
+    height: 100%;
+    max-height: 123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 0px 24px 0px;
+  }
+
+  .pageNotFoundTextHeading {
+    color: var(--color-text);
+    font-family: var(--font-merriweather);
+    font-size: 36px;
+    font-weight: 700;
+    height: 100%;
+    max-height: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pageNotFoundText {
+    color: var(--color-text);
+    font-family: var(--font-lato);
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    max-height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pageNotFoundButtonContainer {
+    height: 50%;
+    max-height: 45px;
+    min-height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes slide-up {
+    0% {
+      padding: 0px 0px 0px 0px;
+    }
+    100% {
+      padding: 0px 0px 117px 0px;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+@import url("../../index.css");
+
+.mainContainer {
+  height: 100%;
+  min-height: 810px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 0px 48px 0px;
+  gap: 48px;
+}
+
+.stacksContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.stackHeadingTextContainer {
+  height: auto;
+  min-height: 156px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stackHeadingText {
+  font-family: var(--font-merriweather);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stackCardsContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.stackCard {
+  background-color: var(--color-card-background);
+  width: calc(50% - 12px);
+  max-width: 480px;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.stackCardHeadingAndIconContainer {
+  height: 30%;
+  max-height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.stackCardIconContainer {
+  background-color: #eaeaea;
+  height: 100%;
+  max-height: 44px;
+  width: 100%;
+  max-width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.stackCardIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.stackCardHeadingTextContainer {
+  height: 100%;
+  max-height: 44px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.stackHeadingTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.stackDetailTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.stackCardDetailsContainer {
+  height: auto;
+  max-height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.stackCardDetailsTextSpan {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .stackCardsContainer {
+    flex-direction: column;
+  }
+
+  .stackCard {
+    width: 100%;
+    max-width: 70%;
+  }
+}
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 767px) {
+  .stackCardsContainer {
+    flex-direction: column;
+  }
+
+  .stackCard {
+    width: 100%;
+    max-width: 100%;
+  }
+}

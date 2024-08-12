@@ -1,0 +1,532 @@
+@import url("../../index.css");
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileAndMenuContainer {
+  height: 70%;
+  max-height: 572px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.profileContainer {
+  height: 100%;
+  max-height: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px 48px 0px;
+  border-bottom: 2px solid var(--color-border);
+  gap: 12px;
+}
+
+.imageContainer {
+  height: 100%;
+  max-height: 68px;
+  width: 100%;
+  max-width: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  height: 68px;
+  width: 68px;
+  border-radius: 6px;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nameAndTitleContainer {
+  height: 100%;
+  max-height: 68px;
+  width: calc(100% - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.nameText {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.titleText {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.menuContainer {
+  width: 100%;
+  height: 100%;
+  max-height: 408px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinkContainer {
+  height: 100%;
+  max-height: 68px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navLinkContainer:hover {
+  background-color: var(--color-link-hover);
+  border-radius: 16px;
+}
+
+.navLinkContainer > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.navLinkContainer > span {
+  height: 100%;
+  max-height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconAndText,
+.iconAndText > a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconAndText:hover,
+.iconAndText:hover > a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconAndTextFill,
+.iconAndTextFill > a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconAndTextFill:hover,
+.iconAndTextFill:hover > a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+span > svg {
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.socialLinksContainer {
+  height: 30%;
+  max-height: 80px;
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 12px 0px 12px;
+  border-top: 2px solid var(--color-border);
+}
+
+.socialIconContainer {
+  height: 44px;
+  width: 44px;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.socialIconContainer:hover {
+  background-color: var(--color-link-hover);
+  border-radius: 16px;
+}
+
+.socialIconContainer > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.socialIconContainer:hover {
+  color: var(--color-accent);
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .profileContainer {
+    width: 100%;
+    max-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 24px 0px;
+    border-bottom: 2px solid var(--color-border);
+    gap: 12px;
+  }
+
+  .imageContainer {
+    height: 100%;
+    max-height: 56px;
+    width: 100%;
+    max-width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profileImg {
+    height: 56px;
+    width: 56px;
+    border-radius: 6px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .nameAndTitleContainer {
+    height: 100%;
+    max-height: 68px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nameText {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .titleText {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .socialLinksContainer {
+    max-height: 144px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 12px 0px 12px;
+  }
+
+  .iconAndText > a,
+  .iconAndTextFill > a {
+    display: none;
+  }
+
+  .navLinkContainer {
+    height: 100%;
+    max-height: 44px;
+    width: 100%;
+    max-width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navLinkContainer > span {
+    height: 100%;
+    max-height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 767px) {
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profileAndMenuContainer {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .profileContainer {
+    height: 100%;
+    max-height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 24px 0px;
+    border-bottom: 2px solid var(--color-border);
+    gap: 12px;
+  }
+
+  .imageContainer {
+    height: 100%;
+    max-height: 48px;
+    width: 100%;
+    max-width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profileImg {
+    height: 48px;
+    width: 48px;
+    border-radius: 6px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .nameAndTitleContainer {
+    height: 100%;
+    max-height: 68px;
+    width: calc(100% - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .nameText {
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  .titleText {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  .menuContainer {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .navLinkContainer {
+    height: 100%;
+    max-height: 68px;
+    min-height: 68px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px;
+  }
+
+  .navLinkContainer > svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .navLinkContainer > span {
+    height: 100%;
+    max-height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .iconAndText,
+  .iconAndText > a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .iconAndText:hover,
+  .iconAndText:hover > a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .iconAndTextFill,
+  .iconAndTextFill > a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .iconAndTextFill:hover,
+  .iconAndTextFill:hover > a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .socialLinksContainer {
+    height: 30%;
+    max-height: 68px;
+    min-height: 68px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    border-top: 2px solid var(--color-border);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .socialIconContainer {
+    height: 44px;
+    width: 44px;
+    color: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .socialIconContainer > svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .socialIconContainer:hover {
+    color: var(--color-accent);
+  }
+
+  /*
+   *  CSS for Hamburger icon
+   */
+
+  .hamburgerMenuIcon,
+  .hamburgerMenuIconExpanded {
+    height: 20px;
+    min-height: 20px;
+    width: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburgerMenuIcon::after,
+  .hamburgerMenuIconExpanded::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+    position: absolute;
+    top: 25%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburgerMenuIcon::before,
+  .hamburgerMenuIconExpanded::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+    position: absolute;
+    bottom: 25%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburgerMenuIconExpanded::after {
+    transform: rotate(-45deg);
+    top: 45%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburgerMenuIconExpanded::before {
+    transform: rotate(45deg);
+    bottom: 45%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fadeOut {
+    animation: fadeOut 0.3s ease-in-out;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,348 @@
+@import url("../../index.css");
+
+.mainContainer {
+  height: 100%;
+  min-height: 810px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 0px 48px 0px;
+  gap: 48px;
+}
+
+.contactHeaderTextContainer {
+  height: auto;
+  min-height: 143px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.contactHeadingTextSpan {
+  font-family: var(--font-merriweather);
+  font-size: 52px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactDetailsTextSpan {
+  max-width: 400px;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.contactFormAndDetailsContainer {
+  height: 100%;
+  min-height: 440px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactFormAndHeadingContainer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 48px 0px 0px 0px;
+  gap: 24px;
+}
+
+.contactMessageSuccessContainer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+}
+
+.contactMessageSuccessHeadingText {
+  font-family: var(--font-merriweather);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.contactMessageSuccessGreetingText {
+  font-family: var(--font-merriweather);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.contactFormHeadingText {
+  font-family: var(--font-merriweather);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.contactFormContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.nameAndEmailInputContainer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.inputField,
+.inputAreaField {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-input-background);
+  color: var(--color-text);
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: var(--font-inter);
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--color-input-shadow-12) 0px 1px 3px, var(--color-input-shadow-24) 0px 1px 2px;
+}
+
+.inputAreaField {
+  resize: none;
+}
+
+.inputField:active,
+.inputField:focus,
+.inputAreaField:active,
+.inputAreaField:focus {
+  border: 1px solid var(--color-accent);
+}
+
+.inputFieldError,
+.inputAreaFieldError {
+  border: 1px solid red;
+}
+
+.inputFieldError::placeholder,
+.inputAreaFieldError::placeholder {
+  color: red;
+}
+
+.contactFormSubmitButton {
+  width: 100% !important;
+}
+
+.contactDetailsContainer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0px 0px 0px;
+  gap: 24px;
+}
+
+.contactEmailAndPhoneContainer {
+  width: 100%;
+  height: 50%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.headingText {
+  font-family: var(--font-merriweather);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.contactDetails {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contactTextAndIconContainer {
+  width: 100%;
+  height: auto;
+  min-height: 44px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 16px 12px 12px;
+  gap: 12px;
+}
+
+.contactIcon,
+.socialLinkIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary);
+}
+
+.contactTextSpan,
+.socialLinkText {
+  color: var(--color-primary);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.socialLinkContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.socialLinksContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.socialLinkIconTextContainer {
+  width: auto;
+  min-width: 145px;
+  height: auto;
+  min-height: 44px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 16px 12px 12px;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.socialLinkIconTextContainer:hover {
+  background-color: var(--color-link-hover);
+}
+
+.socialLinkIconTextContainer:hover > svg,
+.socialLinkIconTextContainer:hover > a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .contactFormAndDetailsContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contactFormAndHeadingContainer {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .contactDetailsContainer {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .contactEmailAndPhoneContainer,
+  .socialLinkContainer {
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .contactTextAndIconContainer,
+  .socialLinkIconTextContainer {
+    padding: 0px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 767px) {
+  .mainContainer {
+    height: 100%;
+    min-height: 810px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px 12px 48px 12px;
+    gap: 48px;
+  }
+
+  .contactHeadingTextSpan {
+    font-size: 36px;
+  }
+
+  .contactDetailsTextSpan {
+    font-size: 14px;
+  }
+
+  .contactFormAndDetailsContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contactFormAndHeadingContainer {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .contactDetailsContainer {
+    width: 100%;
+    height: auto;
+    gap: 48px;
+  }
+
+  .contactEmailAndPhoneContainer,
+  .socialLinkContainer {
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .contactTextAndIconContainer,
+  .socialLinkIconTextContainer {
+    padding: 0px;
+  }
+}

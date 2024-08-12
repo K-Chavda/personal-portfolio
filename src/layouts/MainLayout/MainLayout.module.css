@@ -1,0 +1,123 @@
+@import url("../../index.css");
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.navigationMenuContainer {
+  height: 100%;
+  max-height: 800px;
+  width: 45%;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 24px 36px 24px;
+  border-right: 2px solid var(--color-border);
+}
+
+.footerAndOutletContainer {
+  height: 100%;
+  min-height: 100vh;
+  width: calc(100% - 320px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px 0px 48px;
+  overflow: scroll;
+}
+
+.outletContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: height 0.3s ease-in-out;
+}
+
+.footerContainer {
+  height: 30%;
+  max-height: 115px;
+  min-height: 115px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 2px solid var(--color-border);
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navigationMenuContainer {
+    max-width: 180px;
+    padding: 24px 24px 12px 24px;
+  }
+
+  .footerAndOutletContainer {
+    width: calc(100% - 180px);
+  }
+
+  .outletContainer {
+    transition: height 0.3s ease-in-out;
+  }
+
+  .footerContainer {
+    max-height: 200px;
+  }
+}
+
+/* For Mobile View */
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 24px 0px 24px;
+  }
+
+  .navigationMenuContainer,
+  .navigationMenuContainerExpanded {
+    height: 100%;
+    max-height: 96px;
+    min-height: 96px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 24px 0px 24px;
+    border-right: 2px solid var(--color-border);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: var(--color-background);
+  }
+
+  .navigationMenuContainerExpanded {
+    max-height: 100vh;
+  }
+
+  .footerAndOutletContainer {
+    width: 100%;
+    padding: 96px 0px 0px 0px;
+  }
+
+  .outletContainer {
+    width: 100%;
+  }
+
+  .footerContainer {
+    max-height: 202px;
+    min-height: 202px;
+  }
+}
