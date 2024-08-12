@@ -198,7 +198,7 @@ const ContactPage = () => {
                 </div>
                 <div
                   className={styles.socialLinkIconTextContainer}
-                  onClick={() => handleSocialLinkClick("linkedin.com")}
+                  onClick={() => handleSocialLinkClick("www.linkedin.com/in/karsan-chavda-a2574b210/")}
                 >
                   <LinkedinIcon className={styles.socialLinkIcon} />
                   <a className={styles.socialLinkText}>LinkedIn</a>
