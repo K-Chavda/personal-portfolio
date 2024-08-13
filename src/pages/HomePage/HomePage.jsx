@@ -29,7 +29,7 @@ const HomePage = () => {
     window.location.href = `https://${Url}`;
   };
 
-  const handleStackClick = (Url) => {
+  const handleCardsClick = (Url) => {
     redirectToUrl(Url);
   };
 
@@ -66,7 +66,7 @@ const HomePage = () => {
               {projectsList.length > 0 &&
                 projectsList.map((project, index) =>
                   index < 3 ? (
-                    <div className={styles.projectCard} key={project.id}>
+                    <div className={styles.projectCard} key={project.id} onClick={() => handleCardsClick(project.url)}>
                       <div className={styles.projectCardImageContainer}>
                         <img src={project.imgPath} alt="kchavda" className={styles.projectCardImage} />
                       </div>
@@ -100,7 +100,7 @@ const HomePage = () => {
                     <div
                       className={styles.stacksCard}
                       key={`${stack.technology}_${index}`}
-                      onClick={() => handleStackClick(stack.url)}
+                      onClick={() => handleCardsClick(stack.url)}
                     >
                       <div className={styles.stackCardIconContainer}>
                         <img src={stack.icon} alt="kchavda" className={styles.stackCardIcon} />
