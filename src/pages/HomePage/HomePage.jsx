@@ -15,9 +15,9 @@ import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 const HomePage = () => {
   const navigate = useNavigate();
 
-  const redirectToPage = (page) => {
+  const redirectToPage = (page, projectId) => {
     navigate(`/${page}`, {
-      state: { activePage: page },
+      state: { projectId: projectId },
     });
   };
 
@@ -29,8 +29,12 @@ const HomePage = () => {
     window.location.href = `https://${Url}`;
   };
 
-  const handleCardsClick = (Url) => {
+  const handleStackClick = (Url) => {
     redirectToUrl(Url);
+  };
+
+  const handleProjectCardClick = (page, projectId) => {
+    redirectToPage(page, projectId);
   };
 
   return (
@@ -66,7 +70,11 @@ const HomePage = () => {
               {projectsList.length > 0 &&
                 projectsList.map((project, index) =>
                   index < 3 ? (
-                    <div className={styles.projectCard} key={project.id} onClick={() => handleCardsClick(project.url)}>
+                    <div
+                      className={styles.projectCard}
+                      key={project.id}
+                      onClick={() => handleProjectCardClick("project-details", project.id)}
+                    >
                       <div className={styles.projectCardImageContainer}>
                         <img src={project.imgPath} alt="kchavda" className={styles.projectCardImage} />
                       </div>
@@ -100,7 +108,7 @@ const HomePage = () => {
                     <div
                       className={styles.stacksCard}
                       key={`${stack.technology}_${index}`}
-                      onClick={() => handleCardsClick(stack.url)}
+                      onClick={() => handleStackClick(stack.url)}
                     >
                       <div className={styles.stackCardIconContainer}>
                         <img src={stack.icon} alt="kchavda" className={styles.stackCardIcon} />
